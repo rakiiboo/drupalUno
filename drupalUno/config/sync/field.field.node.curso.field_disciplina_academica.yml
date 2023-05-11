@@ -1,0 +1,29 @@
+uuid: 1576e9b9-70d6-40cf-b802-463387cadbf2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_disciplina_academica
+    - node.type.curso
+    - taxonomy.vocabulary.disciplinas_academicas
+id: node.curso.field_disciplina_academica
+field_name: field_disciplina_academica
+entity_type: node
+bundle: curso
+label: 'Disciplina academica'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      disciplinas_academicas: disciplinas_academicas
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

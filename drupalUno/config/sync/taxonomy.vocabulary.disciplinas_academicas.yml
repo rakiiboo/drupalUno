@@ -1,0 +1,8 @@
+uuid: 3b15d1aa-eadf-4221-8194-a6aa38062547
+langcode: en
+status: true
+dependencies: {  }
+name: 'Disciplinas academicas'
+vid: disciplinas_academicas
+description: 'Áreas de conocimiento que se estudian en la educación superior.'
+weight: 0
