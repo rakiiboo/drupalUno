@@ -1,9 +1,9 @@
 _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
-uuid: 3ddd0926-124d-4322-a1d6-50426d15cf27
-name: 'Demo site'
-mail: admin@example.com
+uuid: fa11d77d-d7ed-4e00-8264-d0208e01f957
+name: Laboratorio
+mail: rakel.2695@gmail.com
 slogan: ''
 page:
   403: ''

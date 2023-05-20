@@ -1,0 +1,59 @@
+uuid: bd944f8a-8715-4438-b165-c960088a5d38
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.carrera.body
+    - field.field.node.carrera.field_campus_en_que_se_imparten
+    - field.field.node.carrera.field_ficha_profesional
+    - node.type.carrera
+  module:
+    - file
+    - text
+id: node.carrera.default
+targetEntityType: node
+bundle: carrera
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_campus_en_que_se_imparten:
+    type: entity_reference_autocomplete
+    weight: 123
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_ficha_profesional:
+    type: file_generic
+    weight: 122
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

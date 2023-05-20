@@ -1,18 +1,18 @@
-uuid: 1576e9b9-70d6-40cf-b802-463387cadbf2
+uuid: 0fd2931d-576d-46f4-997c-a2ba79f33502
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_disciplina_academica
-    - node.type.curso
-    - taxonomy.vocabulary.disciplinas_academicas
-id: node.curso.field_disciplina_academica
-field_name: field_disciplina_academica
+    - field.storage.node.field_campus_en_que_se_imparten
+    - node.type.carrera
+    - taxonomy.vocabulary.campos
+id: node.carrera.field_campus_en_que_se_imparten
+field_name: field_campus_en_que_se_imparten
 entity_type: node
-bundle: curso
-label: 'Disciplina academica'
+bundle: carrera
+label: 'Campus en que se imparten'
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      disciplinas_academicas: disciplinas_academicas
+      campos: campos
     sort:
       field: name
       direction: asc

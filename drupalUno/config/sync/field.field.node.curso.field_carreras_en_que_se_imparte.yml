@@ -1,26 +1,26 @@
-uuid: 4c27c7ba-ca75-442c-a916-0e2b342dc907
+uuid: 44963d2a-c6cc-49bc-bcdb-25b3eeb637b1
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_programa
-    - media.type.document
+    - field.storage.node.field_carreras_en_que_se_imparte
+    - node.type.carrera
     - node.type.curso
-id: node.curso.field_programa
-field_name: field_programa
+id: node.curso.field_carreras_en_que_se_imparte
+field_name: field_carreras_en_que_se_imparte
 entity_type: node
 bundle: curso
-label: 'Programa del curso'
-description: 'Agregue un formato en pdf'
+label: 'Carreras en que se imparten'
+description: ''
 required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:media'
+  handler: 'default:node'
   handler_settings:
     target_bundles:
-      document: document
+      carrera: carrera
     sort:
       field: _none
       direction: ASC

@@ -1,4 +1,4 @@
-uuid: 167587c5-74b4-4568-b427-5a46896f460d
+uuid: b71550d6-4fd6-4845-a80b-26c8655d6239
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: Curso
 type: curso
-description: 'Podras agregar un curso nuevo'
+description: ''
 help: ''
 new_revision: true
 preview_mode: 1

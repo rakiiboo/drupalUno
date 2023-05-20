@@ -1,15 +1,15 @@
-uuid: cc9a5c3c-22dd-4cac-9324-b5f611c45626
+uuid: df8f4bac-6ee6-4c1d-87be-695f021133ff
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.curso.body
-    - field.field.node.curso.field_disciplina_academica
-    - field.field.node.curso.field_programa
+    - field.field.node.curso.field_carreras_en_que_se_imparte
+    - field.field.node.curso.field_codigo_del_curso
+    - field.field.node.curso.field_programa_curso
     - node.type.curso
   module:
-    - media_library
-    - path
+    - file
     - text
 id: node.curso.default
 targetEntityType: node
@@ -26,15 +26,9 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-  created:
-    type: datetime_timestamp
-    weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_disciplina_academica:
+  field_carreras_en_que_se_imparte:
     type: entity_reference_autocomplete
-    weight: 123
+    weight: 124
     region: content
     settings:
       match_operator: CONTAINS
@@ -42,39 +36,20 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_programa:
-    type: media_library_widget
+  field_codigo_del_curso:
+    type: string_textfield
     weight: 122
     region: content
     settings:
-      media_types: {  }
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    weight: 15
+  field_programa_curso:
+    type: file_generic
+    weight: 123
     region: content
     settings:
-      display_label: true
-    third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    weight: 120
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    weight: 16
-    region: content
-    settings:
-      display_label: true
+      progress_indicator: throbber
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -84,14 +59,10 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 5
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

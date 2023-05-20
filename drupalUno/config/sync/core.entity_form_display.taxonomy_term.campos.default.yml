@@ -1,0 +1,23 @@
+uuid: 2f55c9f2-899c-4ed3-baf2-e82777578a37
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.campos
+id: taxonomy_term.campos.default
+targetEntityType: taxonomy_term
+bundle: campos
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true
+  status: true

@@ -1,12 +1,12 @@
-uuid: 978d58f2-7989-4296-8db3-50c8e5d6dc1a
+uuid: c7becc9c-9e3e-4f74-bee8-1502e724b5a2
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - taxonomy
-id: node.field_disciplina_academica
-field_name: field_disciplina_academica
+id: node.field_campus_en_que_se_imparten
+field_name: field_campus_en_que_se_imparten
 entity_type: node
 type: entity_reference
 settings:
